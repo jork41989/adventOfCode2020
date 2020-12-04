@@ -11,7 +11,7 @@ let treeCount = function (hill) {
   let count = 0
   let maxLen = hill[0].length - 1;
   console.log(hill[0].length)
-  while (row <= hill.length - 1){
+  while (row < hill.length){
     let curIdx = hill[row][col]
     console.log(row, col, curIdx)
     if(curIdx === "#"){
@@ -35,7 +35,7 @@ let treeCountDuex = function (hill, colInc, rowInc) {
   let count = 0;
   let maxLen = hill[0].length - 1;
   console.log(hill[0].length);
-  while (row <= hill.length - 1) {
+  while (row < hill.length) {
     let curIdx = hill[row][col];
     console.log(row, col, curIdx);
     if (curIdx === "#") {
